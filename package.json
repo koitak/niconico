@@ -1,0 +1,10 @@
+{
+  "name": "niconico-speenya",
+  "version": "0.0.3",
+  "main": "server.js",
+  "dependencies": {
+    "console-stamp": "^0.2.5",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
