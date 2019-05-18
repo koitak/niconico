@@ -66,14 +66,30 @@
         <label class="control-label col-sm-2">スタンプ</label>
         <div class="input-group">
           <button class="btn btn-default" type="button" onclick="like('ok')">
-            <img name="" src="okicon.png" style="width:1em;height:em;" alt="" /> わかる
+            <img name="" src="okicon.png" style="width:1em;height:em;" alt="" /> わかった
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
           <button class="btn btn-default" type="button" onclick="like('no')">
             <img name="" src="noicon.png" style="width:1em;height:em;" alt="" /> 難しい
           </button><!-- speenya <i class="fa fa-paw"></i> -->
-          <button class="btn btn-default" type="button" onclick="like('aye')">
-            <img name="" src="ayeicon.png" style="width:1em;height:em;" alt="" /> 賛成
+          <button class="btn btn-default" type="button" onclick="like('good')">
+            <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" /> いいね
+          </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
+          <button class="btn btn-default" type="button" onclick="like('bad')">
+            <img name="" src="badicon.png" style="width:1em;height:em;" alt="" /> よくないね
+          </button><!-- speenya <i class="fa fa-paw"></i> -->
+<br /><br />
+          <button class="btn btn-default" type="button" onclick="like('again')">
+            <img name="" src="againicon.png" style="width:1em;height:em;" alt="" /> もう一度
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
+          <button class="btn btn-default" type="button" onclick="like('nomore')">
+            <img name="" src="nomoreicon.png" style="width:1em;height:em;" alt="" /> くどい
+          </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
+<!--           <button class="btn btn-default" type="button" onclick="like('aye')">
+            <img name="" src="ayeicon.png" style="width:1em;height:em;" alt="" /> 賛成
+          </button><!-- newspicks <i class="fa fa-newspaper-o"></i>
+          <button class="btn btn-default" type="button" onclick="like('nay')">
+            <img name="" src="nayicon.png" style="width:1em;height:em;" alt="" /> 反対　
+          </button> --><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
         </div>
       </div>
       <div id="url" class="form-group" style="display: none">
@@ -96,8 +112,8 @@
           </span>
         </div>
       </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2">大きさ</label>
+<nobr>      <div class="form-group">
+         <label class="control-label col-sm-2"></label><!-- 大きさ -->
         <div class="input-group btn-group" data-toggle="buttons">
           <label class="btn btn-default">
             <input type="radio" name="size" class="needsclick" value="72"> 大
@@ -108,11 +124,12 @@
           <label class="btn btn-default">
             <input type="radio" name="size" class="needsclick" value="36"> 小
           </label>　<!-- 48 -->
-        </div>
+         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-2">Speed</label>
+        <label class="control-label col-sm-2"></label><!-- Speed -->
         <div class="input-group btn-group" data-toggle="buttons">
+　
           <label class="btn btn-default">
             <input type="radio" name="duration" class="needsclick" value="4000"> 遅
           </label>
@@ -123,9 +140,9 @@
             <input type="radio" name="duration" class="needsclick" value="2000"> 速
           </label>
         </div>
-      </div>
+      </div></nobr>
       <div class="form-group">
-        <label class="control-label col-sm-2">Color</label>
+         <label class="control-label col-sm-2"></label><!-- Color -->
         <div class="input-group btn-group" data-toggle="buttons">
           <label class="btn btn-default active">
             <input type="radio" name="color" class="needsclick" value="black" selected> 黒
