@@ -69,27 +69,27 @@ function sleep(milliseconds) {
 
 <body>
   <div class="container">
-    <form class="form-horizontal" style="margin: 16px" role="form" action="/like" method="get" onsubmit="myButton.disabled=true;handleSubmit(this);sleep(1000);myButton.disabled=false; return false;">
+    <form class="form-horizontal" style="margin: 16px" role="form" action="/like" method="get" onsubmit="handleSubmit(this); return false;">
       <div class="form-group">
         <label class="control-label col-sm-2">スタンプ</label>
         <div class="input-group">
-          <button class="btn btn-default" type="button" onclick="like('ok');myButton.disabled=true;sleep(1000);myButton.disabled=false;" name="myButton">
+          <button class="btn btn-default" type="button" onclick="like('ok');myButton1.disabled=true;sleep(1000);myButton1.disabled=false;" id="myButton1" name="myButton1">
             <img name="" src="okicon.png" style="width:1em;height:em;" alt="" /> わかった
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> --> <!-- name="myButton" added by k -->
-          <button class="btn btn-default" type="button" onclick="like('no');myButton.disabled=true;sleep(1000);myButton.disabled=false;" name="myButton">
+          <button class="btn btn-default" type="button" onclick="like('no')myButton2.disabled=true;sleep(1000);myButton2.disabled=false;" id="myButton2" name="myButton2">
             <img name="" src="noicon.png" style="width:1em;height:em;" alt="" /> 難しい
           </button><!-- speenya <i class="fa fa-paw"></i> -->
-          <button class="btn btn-default" type="button" onclick="like('good');myButton.disabled=true;sleep(1000);myButton.disabled=false;" name="myButton">
+          <button class="btn btn-default" type="button" onclick="like('good')myButton3.disabled=true;sleep(1000);myButton3.disabled=false;" id="myButton3" name="myButton3">
             <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" /> いいね
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
-          <button class="btn btn-default" type="button" onclick="like('bad');myButton.disabled=true;sleep(1000);myButton.disabled=false;" name="myButton">
+          <button class="btn btn-default" type="button" onclick="like('bad')myButton4.disabled=true;sleep(1000);myButton4.disabled=false;" id="myButton4" name="myButton4">
             <img name="" src="badicon.png" style="width:1em;height:em;" alt="" /> よくないね
           </button><!-- speenya <i class="fa fa-paw"></i> -->
 <br /><br />
-          <button class="btn btn-default" type="button" onclick="like('again');myButton.disabled=true;sleep(1000);myButton.disabled=false;" name="myButton">
+          <button class="btn btn-default" type="button" onclick="like('again')myButton5.disabled=true;sleep(1000);myButton5.disabled=false;" id="myButton5" name="myButton5">
             <img name="" src="againicon.png" style="width:1em;height:em;" alt="" /> もう一回
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
-          <button class="btn btn-default" type="button" onclick="like('nomore');myButton.disabled=true;sleep(1000);myButton.disabled=false;" name="myButton">
+          <button class="btn btn-default" type="button" onclick="like('nomore')myButton6.disabled=true;sleep(1000);myButton6.disabled=false;" id="myButton6" name="myButton6">
             <img name="" src="nomoreicon.png" style="width:1em;height:em;" alt="" /> くどい
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
 <!--           <button class="btn btn-default" type="button" onclick="like('aye')">
