@@ -16,14 +16,15 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
   <script>
-function sleep(milliseconds) { 
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-} // This function was added by k.
+const waittime=2000;
+// function sleep(milliseconds) { 
+//   var start = new Date().getTime();
+//   for (var i = 0; i < 1e7; i++) {
+//     if ((new Date().getTime() - start) > milliseconds){
+//       break;
+//     }
+//   }
+// } // This function was added by k.
     // prevent user scroll on mobile phone
     document.addEventListener('touchmove', function (e) { e.preventDefault() }, false)
 
@@ -73,20 +74,20 @@ function sleep(milliseconds) {
       <div class="form-group">
         <label class="control-label col-sm-2">スタンプ</label>
         <div class="input-group">
-          <button class="btn btn-default" type="button" onclick="like('ok');myButton1.disabled=true;sleep(1000);myButton1.disabled=false;" id="myButton1" name="myButton1">
+          <button class="btn btn-default" id="myButton1" type="button" onclick="like('ok');this.disabled=true;setTimeout(function(){document.getElementById('myButton1').disabled=false},waittime);">
             <img name="" src="okicon.png" style="width:1em;height:em;" alt="" /> わかった
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> --> <!-- name="myButton" added by k -->
-          <button class="btn btn-default" type="button" onclick="like('no')myButton2.disabled=true;sleep(1000);myButton2.disabled=false;" id="myButton2" name="myButton2">
+          <button class="btn btn-default" id="myButton2" type="button" onclick="like('no');this.disabled=true;setTimeout(function(){document.getElementById('myButton2').disabled=false},waittime);">
             <img name="" src="noicon.png" style="width:1em;height:em;" alt="" /> 難しい
           </button><!-- speenya <i class="fa fa-paw"></i> -->
-          <button class="btn btn-default" type="button" onclick="like('good')myButton3.disabled=true;sleep(1000);myButton3.disabled=false;" id="myButton3" name="myButton3">
+          <button class="btn btn-default" id="myButton3" type="button" onclick="like('good');this.disabled=true;setTimeout(function(){document.getElementById('myButton3').disabled=false},waittime);">
             <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" /> いいね
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
-          <button class="btn btn-default" type="button" onclick="like('bad')myButton4.disabled=true;sleep(1000);myButton4.disabled=false;" id="myButton4" name="myButton4">
+          <button class="btn btn-default" id="myButton4" type="button" onclick="like('bad');this.disabled=true;setTimeout(function(){document.getElementById('myButton4').disabled=false},waittime);">
             <img name="" src="badicon.png" style="width:1em;height:em;" alt="" /> よくないね
           </button><!-- speenya <i class="fa fa-paw"></i> -->
 <br /><br />
-          <button class="btn btn-default" type="button" onclick="like('again')myButton5.disabled=true;sleep(1000);myButton5.disabled=false;" id="myButton5" name="myButton5">
+          <button class="btn btn-default" id="myButton5" type="button" onclick="like('again');this.disabled=true;setTimeout(function(){document.getElementById('myButton5').disabled=false},waittime);">
             <img name="" src="againicon.png" style="width:1em;height:em;" alt="" /> もう一回
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
           <button class="btn btn-default" type="button" onclick="like('nomore')myButton6.disabled=true;sleep(1000);myButton6.disabled=false;" id="myButton6" name="myButton6">
