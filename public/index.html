@@ -81,7 +81,7 @@ const waittime=2000;
             <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" /> いいね
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
            <button class="btn btn-default" id="myButton5" type="button" onclick="like('again');this.disabled=true;setTimeout(function(){document.getElementById('myButton5').disabled=false},waittime);">
-            <img name="" src="againicon.png" style="width:1em;height:em;" alt="" /> もう一回
+            <img name="" src="againicon.png" style="width:1em;height:em;" alt="" /> もう1回
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
 <br /><br />
           <button class="btn btn-default" id="myButton2" type="button" onclick="like('no');this.disabled=true;setTimeout(function(){document.getElementById('myButton2').disabled=false},waittime);">
@@ -111,13 +111,13 @@ const waittime=2000;
         </div>
       </div>
     </form>
-    <form class="form-horizontal" style="margin: 16px" role="form" action="/comment" method="get" onsubmit="if (this.body.value == '') return false; handleSubmit(this); this.body.value = '';this.disabled=true;setTimeout(function(){document.getElementById('myButton6').disabled=false},waittime); return false;">
+    <form class="form-horizontal" style="margin: 16px" role="form" action="/comment" method="get" onsubmit="if (this.body.value == '') return false; handleSubmit(this); this.body.value = '' return false;">
       <div class="form-group">
         <label class="control-label col-sm-2">言葉</label>
         <div class="input-group">
           <input type="text" name="body" maxlength="60" class="form-control" placeholder="流す言葉をここに書く">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="submit">送信</button>
+            <button class="btn btn-default" id="mytext" type="submit" onclick="this.disabled=true;setTimeout(function(){document.getElementById('mytext').disabled=false},waittime);">送信</button>
           </span>
         </div>
       </div>
