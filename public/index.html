@@ -70,14 +70,17 @@ const waittime=2000;
         <label class="control-label col-sm-2">スタンプ</label>
         <div class="input-group">
           <button class="btn btn-default" id="myButton1" type="button" onclick="like('ok');this.disabled=true;setTimeout(function(){document.getElementById('myButton1').disabled=false},waittime);">
-            <img name="" src="okicon.png" style="width:1em;height:em;" alt="" /> わかった
+            <img name="" src="okicon.png" style="width:1em;height:em;" alt="" />わかった
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> --> <!-- name="myButton" added by k -->
           <button class="btn btn-default" id="myButton3" type="button" onclick="like('good');this.disabled=true;setTimeout(function(){document.getElementById('myButton3').disabled=false},waittime);">
-            <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" /> いいね
+            <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" />いいね
           </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
            <button class="btn btn-default" id="myButton5" type="button" onclick="like('again');this.disabled=true;setTimeout(function(){document.getElementById('myButton5').disabled=false},waittime);">
-            <img name="" src="againicon.png" style="width:1em;height:em;" alt="" /> もう1回
+            <img name="" src="againicon.png" style="width:1em;height:em;" alt="" />もう1回
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
+          <button class="btn btn-default" id="myButton11" type="button" onclick="like('hee');this.disabled=true;setTimeout(function(){document.getElementById('myButton11').disabled=false},waittime);">
+            <img name="" src="heeicon.png" style="width:1em;height:em;" alt="" />へぇ〜
+          </button>
 <br /><br />
           <button class="btn btn-default" id="myButton2" type="button" onclick="like('no');this.disabled=true;setTimeout(function(){document.getElementById('myButton2').disabled=false},waittime);">
             <img name="" src="noicon.png" style="width:1em;height:em;" alt="" /> 難しい
@@ -134,13 +137,13 @@ const waittime=2000;
         <div class="input-group btn-group" data-toggle="buttons">
           <label class="btn btn-default">
             <input type="radio" name="size" class="needsclick" value="72"> 大
-          </label>　<!-- 64 -->
+          </label>　<!-- was 64 -->
           <label class="btn btn-default active">
             <input type="radio" name="size" class="needsclick" value="50" selected> 中
-          </label>　<!-- 56 -->
+          </label>　<!-- was 56 -->
           <label class="btn btn-default">
             <input type="radio" name="size" class="needsclick" value="36"> 小
-          </label>　<!-- 48 -->
+          </label>　<!-- was 48 -->
          </div>
       </div>
       <div class="form-group">
@@ -148,14 +151,14 @@ const waittime=2000;
         <div class="input-group btn-group" data-toggle="buttons">
 　
           <label class="btn btn-default">
-            <input type="radio" name="duration" class="needsclick" value="4000"> 遅
-          </label>
+            <input type="radio" name="duration" class="needsclick" value="12000"> 遅
+          </label>　<!-- was 4000 -->
           <label class="btn btn-default active">
-            <input type="radio" name="duration" class="needsclick" value="3000" selected> 中
-          </label>
+            <input type="radio" name="duration" class="needsclick" value="9000" selected> 中
+          </label>　<!-- was 3000 -->
           <label class="btn btn-default">
-            <input type="radio" name="duration" class="needsclick" value="2000"> 速
-          </label>
+            <input type="radio" name="duration" class="needsclick" value="6000"> 速
+          </label>　<!-- was 2000 -->
         </div>
       </div></nobr>
       <div class="form-group">
