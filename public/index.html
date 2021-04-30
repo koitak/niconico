@@ -65,29 +65,29 @@ const waittime=2000;
 
 <body>
   <div class="container">
-    <form class="form-horizontal" style="margin: 16px" role="form" action="/like" method="get" onsubmit="handleSubmit(this); return false;">
+    <form class="form-horizontal" style="margin: 16	px" role="form" action="/like" method="get" onsubmit="handleSubmit(this); return false;">
       <div class="form-group">
         <label class="control-label col-sm-2">ｽﾀﾝﾌﾟ</label>
         <div class="input-group">
           <button class="btn btn-default" id="myButton1" type="button" onclick="like('ok');this.disabled=true;setTimeout(function(){document.getElementById('myButton1').disabled=false},waittime);">
             <img name="" src="okicon.png" style="width:1em;height:em;" alt="" />わかった
-          </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> --> <!-- name="myButton" added by k -->
+          </button>　<!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> --> <!-- name="myButton" added by k -->
           <button class="btn btn-default" id="myButton3" type="button" onclick="like('good');this.disabled=true;setTimeout(function(){document.getElementById('myButton3').disabled=false},waittime);">
             <img name="" src="goodicon.png" style="width:1em;height:em;" alt="" />いいね
-          </button><!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
+          </button>　<!-- btn-primary thumb <i class="fa fa-thumbs-up"></i> -->
            <button class="btn btn-default" id="myButton5" type="button" onclick="like('again');this.disabled=true;setTimeout(function(){document.getElementById('myButton5').disabled=false},waittime);">
             <img name="" src="againicon.png" style="width:1em;height:em;" alt="" />もう1回
-          </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
+          </button>　<!-- newspicks <i class="fa fa-newspaper-o"></i> -->
           <button class="btn btn-default" id="myButton11" type="button" onclick="like('hee');this.disabled=true;setTimeout(function(){document.getElementById('myButton11').disabled=false},waittime);">
             <img name="" src="heeicon.png" style="width:1em;height:em;" alt="" />へぇ〜
           </button>
 <br /><br />
           <button class="btn btn-default" id="myButton2" type="button" onclick="like('no');this.disabled=true;setTimeout(function(){document.getElementById('myButton2').disabled=false},waittime);">
             <img name="" src="noicon.png" style="width:1em;height:em;" alt="" />難しい
-          </button><!-- speenya <i class="fa fa-paw"></i> -->
+          </button>　<!-- speenya <i class="fa fa-paw"></i> -->
          <button class="btn btn-default" id="myButton4" type="button" onclick="like('bad');this.disabled=true;setTimeout(function(){document.getElementById('myButton4').disabled=false},waittime);">
             <img name="" src="badicon.png" style="width:1em;height:em;" alt="" />よくないね
-          </button><!-- speenya <i class="fa fa-paw"></i> -->
+          </button>　<!-- speenya <i class="fa fa-paw"></i> -->
           <button class="btn btn-default" id="myButton6" type="button" onclick="like('nomore');this.disabled=true;setTimeout(function(){document.getElementById('myButton6').disabled=false},waittime);">
             <img name="" src="nomoreicon.png" style="width:1em;height:em;" alt="" />くどい
           </button><!-- newspicks <i class="fa fa-newspaper-o"></i> -->
@@ -100,13 +100,13 @@ const waittime=2000;
 <br /><br />
           <button class="btn btn-default" id="myButton7" type="button" onclick="like('no1');this.disabled=true;setTimeout(function(){document.getElementById('myButton7').disabled=false},waittime);">
             <img name="" src="no1icon.png" style="width:1em;height:em;" alt="" /> １ 
-          </button>
+          </button>　
          <button class="btn btn-default" id="myButton8" type="button" onclick="like('no2');this.disabled=true;setTimeout(function(){document.getElementById('myButton8').disabled=false},waittime);">
             <img name="" src="no2icon.png" style="width:1em;height:em;" alt="" /> ２ 
-          </button>
+          </button>　
           <button class="btn btn-default" id="myButton9" type="button" onclick="like('no3');this.disabled=true;setTimeout(function(){document.getElementById('myButton9').disabled=false},waittime);">
             <img name="" src="no3icon.png" style="width:1em;height:em;" alt="" /> ３ 
-          </button>
+          </button>　
           <button class="btn btn-default" id="myButton10" type="button" onclick="like('no4');this.disabled=true;setTimeout(function(){document.getElementById('myButton10').disabled=false},waittime);">
             <img name="" src="no4icon.png" style="width:1em;height:em;" alt="" /> ４ 
           </button>
@@ -152,10 +152,10 @@ const waittime=2000;
 　
           <label class="btn btn-default">
             <input type="radio" name="duration" class="needsclick" value="12000"> 遅
-          </label>　<!-- was 4000 -->
+          </label>　　<!-- was 4000 -->
           <label class="btn btn-default active">
             <input type="radio" name="duration" class="needsclick" value="9000" selected> 中
-          </label>　<!-- was 3000 -->
+          </label>　　<!-- was 3000 -->
           <label class="btn btn-default">
             <input type="radio" name="duration" class="needsclick" value="6000"> 速
           </label>　<!-- was 2000 -->
@@ -166,13 +166,13 @@ const waittime=2000;
         <div class="input-group btn-group" data-toggle="buttons">
           <label class="btn btn-default active">
             <input type="radio" name="color" class="needsclick" value="black" selected> 黒
-          </label>
+          </label>　
           <label class="btn btn-default">
             <input type="radio" name="color" class="needsclick" value="red"> 赤
-          </label>
+          </label>　
           <label class="btn btn-default">
             <input type="radio" name="color" class="needsclick" value="blue"> 青
-          </label>
+          </label>　
           <label class="btn btn-default">
             <input type="radio" name="color" class="needsclick" value="green"> 緑
           </label>
