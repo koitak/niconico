@@ -4,7 +4,7 @@
   "main": "server.js",
   "dependencies": {
     "console-stamp": "^0.2.5",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "socket.io": "^1.7.3"
   }
 }
